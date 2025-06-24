@@ -9,6 +9,7 @@
 - **Model Security** vulnerability tracking and management
 - **Data Security** PII usage monitoring and controls
 - **Compliance** regulatory framework adherence
+- **Supply-Chain** view of suppliers and their AI TRiSM status
 - **Integrations** workflow automation and third-party tools
 
 Built for modern AI governance, risk management, and regulatory compliance.
