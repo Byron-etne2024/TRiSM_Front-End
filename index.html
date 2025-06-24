@@ -597,6 +597,10 @@
                     <span class="nav-icon">📋</span>
                     Compliance
                 </button>
+                <button class="nav-item" onclick="showPage('supply-chain')" id="nav-supply-chain">
+                    <span class="nav-icon">🔗</span>
+                    Supply-Chain
+                </button>
                 <button class="nav-item" onclick="showPage('integrations')" id="nav-integrations">
                     <span class="nav-icon">⚙️</span>
                     Integrations
@@ -655,8 +659,8 @@
                         <div class="metric-content">
                             <div class="metric-info">
                                 <h3>Model Inventory</h3>
-                                <div class="metric-value text-blue">5</div>
-                                <div class="metric-label">Total Models</div>
+                                <div class="metric-value text-blue">8</div>
+                                <div class="metric-label">Total Models (5 Internal + 3 Vendor)</div>
                             </div>
                             <div class="metric-icon text-blue">🗄️</div>
                         </div>
@@ -1107,6 +1111,154 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supply-Chain Page -->
+            <div id="page-supply-chain" class="page">
+                <div class="page-header">
+                    <h1 class="page-title">Supply-Chain</h1>
+                    <div style="display: flex; gap: 12px;">
+                        <button class="btn">🔍 Filter</button>
+                        <button class="btn">📥 Export</button>
+                        <button class="btn btn-primary">➕ Add Vendor</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="search-container">
+                        <span style="color: #9ca3af;">🔍</span>
+                        <input type="text" class="search-input" placeholder="Search vendor AI systems...">
+                    </div>
+                    
+                    <div class="table-container">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Vendor Name</th>
+                                    <th>Model Security</th>
+                                    <th>Data Security</th>
+                                    <th>Compliance</th>
+                                    <th>Last Updated</th>
+                                    <th>Vendor Manager</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <div style="font-weight: 500; color: #1f2937;">OpenAI GPT-4 API</div>
+                                            <div style="font-size: 14px; color: #6b7280;">AI-powered text generation</div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge badge-green">Secure</span></td>
+                                    <td><span class="badge badge-yellow">Under Review</span></td>
+                                    <td><span class="badge badge-green">SOC 2 Type II</span></td>
+                                    <td style="color: #6b7280;">1 week ago</td>
+                                    <td>
+                                        <div>
+                                            <div style="font-weight: 500; color: #1f2937;">Sarah Chen</div>
+                                            <div style="font-size: 12px; color: #6b7280;">AI Platform Lead</div>
+                                        </div>
+                                    </td>
+                                    <td><button class="btn-link">👁️</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <div style="font-weight: 500; color: #1f2937;">AWS Bedrock - Claude</div>
+                                            <div style="font-size: 14px; color: #6b7280;">Enterprise AI assistant</div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge badge-green">Secure</span></td>
+                                    <td><span class="badge badge-green">Compliant</span></td>
+                                    <td><span class="badge badge-green">FedRAMP</span></td>
+                                    <td style="color: #6b7280;">3 days ago</td>
+                                    <td>
+                                        <div>
+                                            <div style="font-weight: 500; color: #1f2937;">Marcus Rodriguez</div>
+                                            <div style="font-size: 12px; color: #6b7280;">Cloud Services Manager</div>
+                                        </div>
+                                    </td>
+                                    <td><button class="btn-link">👁️</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <div style="font-weight: 500; color: #1f2937;">DataRobot AutoML</div>
+                                            <div style="font-size: 14px; color: #6b7280;">Automated machine learning platform</div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge badge-red">At Risk</span></td>
+                                    <td><span class="badge badge-yellow">Partial</span></td>
+                                    <td><span class="badge badge-red">Non-Compliant</span></td>
+                                    <td style="color: #6b7280;">2 weeks ago</td>
+                                    <td>
+                                        <div>
+                                            <div style="font-weight: 500; color: #1f2937;">Jennifer Park</div>
+                                            <div style="font-size: 12px; color: #6b7280;">ML Operations Lead</div>
+                                        </div>
+                                    </td>
+                                    <td><button class="btn-link">👁️</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Supply Chain Risk Summary -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Supply Chain Risk Summary</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-content">
+                                    <div class="metric-info">
+                                        <h3>Vendor Models</h3>
+                                        <div class="metric-value text-blue">3</div>
+                                        <div class="metric-label">External AI Systems</div>
+                                    </div>
+                                    <div class="metric-icon text-blue">🏢</div>
+                                </div>
+                            </div>
+
+                            <div class="metric-card">
+                                <div class="metric-content">
+                                    <div class="metric-info">
+                                        <h3>Security Risk</h3>
+                                        <div class="metric-value text-red">1</div>
+                                        <div class="metric-label">At Risk Vendors</div>
+                                    </div>
+                                    <div class="metric-icon text-red">⚠️</div>
+                                </div>
+                            </div>
+
+                            <div class="metric-card">
+                                <div class="metric-content">
+                                    <div class="metric-info">
+                                        <h3>Compliance</h3>
+                                        <div class="metric-value text-green">67%</div>
+                                        <div class="metric-label">Vendor Compliance Rate</div>
+                                    </div>
+                                    <div class="metric-icon text-green">✅</div>
+                                </div>
+                            </div>
+
+                            <div class="metric-card">
+                                <div class="metric-content">
+                                    <div class="metric-info">
+                                        <h3>Last Review</h3>
+                                        <div class="metric-value text-yellow">3</div>
+                                        <div class="metric-label">Days Ago</div>
+                                    </div>
+                                    <div class="metric-icon text-yellow">📅</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
