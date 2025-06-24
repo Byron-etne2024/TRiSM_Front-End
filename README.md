@@ -1,7 +1,7 @@
 # AI TRiSM Platform
 
 ## 🎯 Live Demo
-**[View Interactive Dashboard →](https://yourusername.github.io/your-repo-name)**
+**[View Interactive Dashboard →](https://github.com/Byron-etne2024/TRiSM_Front-End))**
 
 ## ✨ Features Demonstrated
 - **Dashboard Overview** with key health metrics
